@@ -1,0 +1,54 @@
+﻿<Window x:Class="Tetris2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Tetris2"
+        mc:Ignorable="d"
+        Title="Tetris" Height="443" Width="386" HorizontalAlignment="Left" VerticalAlignment="Top" ResizeMode="CanMinimize">
+    <Grid x:Name="grid" Margin="0,0,0,1" Background="Lime">
+        <Grid x:Name="tetrisGrid" Panel.ZIndex="2" Height="401" Width="201" HorizontalAlignment="Left" VerticalAlignment="Top" Background="Black" Margin="1,1,0,0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="20"/>
+                <RowDefinition Height="20"/>
+                <RowDefinition Height="20"/>
+                <RowDefinition Height="20"/>
+                <RowDefinition Height="20"/>
+                <RowDefinition Height="20"/>
+                <RowDefinition Height="20"/>
+                <RowDefinition Height="20"/>
+                <RowDefinition Height="20"/>
+                <RowDefinition Height="20"/>
+                <RowDefinition Height="20"/>
+                <RowDefinition Height="20"/>
+                <RowDefinition Height="20"/>
+                <RowDefinition Height="20"/>
+                <RowDefinition Height="20"/>
+                <RowDefinition Height="20"/>
+                <RowDefinition Height="20"/>
+                <RowDefinition Height="20"/>
+                <RowDefinition Height="20"/>
+                <RowDefinition Height="20"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="20"/>
+                <ColumnDefinition Width="20"/>
+                <ColumnDefinition Width="20"/>
+                <ColumnDefinition Width="20"/>
+                <ColumnDefinition Width="20"/>
+                <ColumnDefinition Width="20"/>
+                <ColumnDefinition Width="20"/>
+                <ColumnDefinition Width="20"/>
+                <ColumnDefinition Width="20"/>
+                <ColumnDefinition Width="20"/>
+            </Grid.ColumnDefinitions>
+        </Grid>
+        <Button x:Name="startStopBtn" Content="НАЧАТЬ ИГРУ" FontSize="24" FontFamily="Courier New" HorizontalAlignment="Left" Margin="203,352,0,0" VerticalAlignment="Top" Foreground="Lime" Background="Black" Width="166" Click="Button_Click_1" Height="50"/>
+        <Canvas x:Name="nextFigureCanvas" HorizontalAlignment="Left" Width="81" Height="41" Margin="246,212,0,0" VerticalAlignment="Top" Background="Black"/>
+        <TextBlock x:Name="GameOverTxt" Text="КОНЕЦ ИГРЫ" HorizontalAlignment="Left" Margin="236,196,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="Lime" Background="Black" TextAlignment="Center" FontFamily="Courier New" Height="74" Width="100" FontSize="25" Padding="10"/>
+        <TextBlock Text="ЛИНИЙ" HorizontalAlignment="Left" Margin="203,1,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="28" Width="166" Foreground="Lime" FontSize="26" FontFamily="Courier New" TextAlignment="Center" Background="Black"/>
+        <TextBlock Text="СЛЕДУЮЩАЯ ФИГУРА" HorizontalAlignment="Left" Margin="203,59,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="57" Width="166" Foreground="Lime" FontSize="26" FontFamily="Courier New" TextAlignment="Center" Background="Black"/>
+        <TextBlock x:Name="scoreTxt" HorizontalAlignment="Left" Margin="203,30,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="28" Width="166" Foreground="Lime" FontSize="26" FontFamily="Courier New" TextAlignment="Center" Background="Black" Text="0"/>
+    </Grid>
+</Window>
+    
